@@ -53,9 +53,10 @@ font-family: "Inter", sans-serif;
 
 button{
     background-color: #4D5B9E;
-    padding: 1em 1.7em;
+    padding: 1.4em 1.7em;
     border-radius: 12px;
     width: 40%;
+    font-weight: bold;
    margin: 0 auto;
    border: none;
    color: #F5F7FB;
