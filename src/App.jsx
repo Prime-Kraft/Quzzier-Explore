@@ -94,7 +94,7 @@ setIsChecked(false)
 
       try {
         setError("")
-        const response = await fetch("https://opentdb.com/api.php?amount=10&difficulty=easy")
+        const response = await fetch("https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple")
         if (!response.ok) {
           throw new Error(`Request failed: ${response.status}`)
 
