@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    background-color: #F5F7FB;
+}
+
+
+.main-container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.blob-top{
+    right: -10px;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.blob-bottom{
+    left: -10px;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10em;
+    color: #293264
+}
+
+.intro-container h1{
+    font-weight: bold;
+     font-size: 2rem;
+     margin-bottom: 0;
+}
+
+.intro-container p{
+font-size: 1rem;
+font-family: "Inter", sans-serif;
+}
+
+
+button{
+    background-color: #4D5B9E;
+    padding: 1em 1.7em;
+    border-radius: 12px;
+    width: 40%;
+   margin: 0 auto;
+   border: none;
+   color: #F5F7FB;
+}
+
+.question-box{
+    margin-bottom: 2em;
+    border-bottom: 2px solid #DBDEF0;
+}
+
+.answer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.answer-btn input{
+position: absolute;
+opacity: 0;
+width: 0;
+height: 0;
+  }
+
+  .answer-btn span{
+      display: flex;
+      padding: 6px 20px;
+      border: 1px solid #293264;
+      border-radius: 10px;
+      color: #293264;
+      background: transparent;
+      cursor: pointer;
+      margin-bottom: 0.7em;
+  }
+
+  .answer-btn input:checked + span{
+      background: #d6dbf5;
+      border-color: #d6dbf5;
+  }
+
+  .answer-btn span:hover{
+      background: #eef0fb;
+  }
+
+  /* these must come AFTER the rule above */
+  .answer-btn.correct input + span {
+    background: #94d7a2;
+    border-color: #94d7a2;
+  }
+
+  .answer-btn.wrong input + span {
+    background: #f8bcbc;
+    border-color: #f8bcbc;
+  }
+
+
+.check-btn{
+   display: block;
+   margin: 0 auto 2em;
+   font-weight: bold;
+}
+
+.check-btn:hover{
+    background-color: #293290;
+}
+
+  .loading-container{
+      margin:  4em auto;
+      text-align: center;
+  }
+
+  .score-container{
+      text-align: center;
+  }
